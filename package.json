@@ -1,0 +1,24 @@
+{
+  "name": "rategion-bot",
+  "version": "1.0.0",
+  "description": "a bot used to showing pornographic media donations.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "keywords": [
+    "porn",
+    "18+",
+    "explicit"
+  ],
+  "author": "oortsky",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.42.0",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "nodemon": "^3.1.0",
+    "telegraf": "^4.16.3"
+  }
+}
