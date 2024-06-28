@@ -115,7 +115,7 @@ bot.start(async ctx => {
     if (joinLink.channelJoinLink) {
       message += "\n\n↘️ _Silakan bergabung ke channel:_";
       replyMarkup.inline_keyboard.push([
-        { text: "📢 Join Channel", url: joinLink.channelJoinLink }
+        { text: "📣 Join Channel", url: joinLink.channelJoinLink }
       ]);
     }
 
