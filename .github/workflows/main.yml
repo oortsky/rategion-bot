@@ -1,0 +1,20 @@
+on: push
+name: 🚀 Deploy bot on push
+jobs:
+  bot-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: 📂 Sync files
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_SERVER }}
+          port: ${{ secrets.FTP_PORT }}
+          local_path: "./*"
+          remote_path: "./"
+          sftp_only: true
+          password: ${{ secrets.FTP_PASSWORD }}
